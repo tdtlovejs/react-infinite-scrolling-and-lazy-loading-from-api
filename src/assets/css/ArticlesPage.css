@@ -1,0 +1,123 @@
+.articles_page_wrapper {
+    height: 100vh;
+    padding: 1rem 0;
+    overflow-y: auto;
+    width: 800px;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 900px){
+    .articles_page_wrapper {
+        width: calc(100% - 2rem);
+    }
+}
+.loading {
+
+}
+
+.article_item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.article_image_wrapper {
+    /*min-width: 200px;*/
+    height: 120px;
+    overflow: hidden;
+    /*max-width: 200px;*/
+}
+
+.article_image_wrapper img {
+    width: 100%;
+}
+
+.article_content {
+    display: flex!important;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+}
+
+.article_title {
+    font-weight: 600;
+    text-align: left;
+    font-size: 1rem;
+    color: #1e2a3a!important;
+}
+
+.article_description {
+    font-style: italic;
+    text-align: left;
+    width: 100%;
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.articles_page_search {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articles_page_body {
+    max-height: calc(100% - 100px);
+    overflow-y: auto;
+}
+.articles_page_body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+.articles_page_body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.articles_page_body::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.articles_page_body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.articles_page_body.horizontal {
+    overflow-y: unset;
+    /*height: 320px;*/
+    overflow-x: auto;
+    width: calc(100% - 60px);
+    display: flex;
+    height: unset;
+    margin: auto;
+}
+
+.articles_page_body.horizontal .article_image_wrapper {
+    width: 200px;
+}
+
+.articles_page_body.horizontal .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+}
+
+.search_input .ant-input-affix-wrapper {
+    padding: 0 0.5rem;
+}
+.search_input input{
+    padding: 0.5rem!important;
+    height: 50px;
+}
+
+.search_input button {
+    width: 50px;
+    height: 50px;
+}
